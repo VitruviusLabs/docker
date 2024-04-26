@@ -1,2 +1,4 @@
 passwd
 .env
+node_modules
+build
