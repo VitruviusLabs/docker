@@ -5,7 +5,7 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
-  '@vitruvius-labs/aws-signature-v4':
+  '@vitruvius-labs/aws-sqs':
     specifier: ^0.1.1
     version: 0.1.1
   mqtt:
@@ -47,8 +47,21 @@ packages:
       '@types/node': 20.12.7
     dev: false
 
-  /@vitruvius-labs/aws-signature-v4@0.1.1:
-    resolution: {integrity: sha512-UlfiL+5oOqovf8FV+Xph9k1aFxVOd+JSKkkysKXHVi/LAUc7Z19Anb7z6sWDmfThawRSU9Okzy9uRBWw5EuDCQ==}
+  /@vitruvius-labs/aws-signature-v4@0.1.2:
+    resolution: {integrity: sha512-urs69/y6LXTN6wpOWTyWCUdxlAE7JoG/Y41UJimaJocbEhCEiS037/N3KyvjD6p6dkVXjtIGsx1e9GCFe+ds3Q==}
+    engines: {node: '>=18.0.0'}
+    dev: false
+
+  /@vitruvius-labs/aws-sqs@0.1.1:
+    resolution: {integrity: sha512-B4dyJGyps1OtPUhq5tnTD1QzSyqDHTn4d4JpLTNwzyl8jjL4/4p4u8fE4ZCFBhg8RyBcO3owuwcOyyDNSJzMTA==}
+    engines: {node: '>=18.0.0'}
+    dependencies:
+      '@vitruvius-labs/aws-signature-v4': 0.1.2
+      '@vitruvius-labs/ts-predicate': 5.0.0
+    dev: false
+
+  /@vitruvius-labs/ts-predicate@5.0.0:
+    resolution: {integrity: sha512-0l75PW7DeBjxiDabhRsZQJMmAXWAd6fqaDgePh29A03R+mBz7xZoBtrK25V8opnPIO8VPTpTVuONOtAma4jY9g==}
     engines: {node: '>=18.0.0'}
     dev: false
 
