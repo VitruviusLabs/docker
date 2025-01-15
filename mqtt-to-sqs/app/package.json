@@ -1,20 +1,32 @@
 {
-  "name": "app",
-  "version": "0.1.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "build": "tsc -p tsconfig.build.json"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "@vitruvius-labs/aws-sqs": "^0.1.1",
-    "mqtt": "^5.5.3"
-  },
-  "devDependencies": {
-    "@types/node": "^20.12.7",
-    "typescript": "^5.4.5"
-  }
+	"name": "@vitruvius-labs/mqtt-to-sqs",
+	"version": "1.0.0",
+	"description": "",
+	"scripts": {
+		"start:dev": "nodemon",
+		"ts:check": "tsc -p tsconfig.json --noEmit",
+		"eslint:check": "eslint",
+		"eslint:fix": "eslint --fix",
+		"test:unit": "c8 mocha --parallel",
+		"build": "tsc -p tsconfig.build.json"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@vitruvius-labs/architectura": "^4.4.0",
+		"@vitruvius-labs/aws-sqs": "^0.1.1",
+		"@vitruvius-labs/ts-predicate": "^6.1.0",
+		"mqtt": "^5.10.3"
+	},
+	"devDependencies": {
+		"@stylistic/eslint-plugin": "^2.10.0",
+		"@types/node": "^22.10.6",
+		"cspell": "^8.15.5",
+		"eslint": "^9.13.0",
+		"nodemon": "^3.1.9",
+		"tsx": "^4.19.2",
+		"typescript": "^5.7.3",
+		"typescript-eslint": "^8.12.2"
+	}
 }

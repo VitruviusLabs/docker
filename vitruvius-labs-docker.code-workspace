@@ -1,0 +1,59 @@
+{
+	"folders": [
+		{
+			"name": "root",
+			"path": "."
+		},
+		{
+			"name": "mqtt-to-sqs",
+			"path": "./mqtt-to-sqs"
+		}
+	],
+	"settings": {
+		// Linters & prettier extensions settings
+		"files.trimTrailingWhitespace": true,
+		"files.insertFinalNewline": true,
+		"editor.detectIndentation": false,
+		"editor.indentSize": "tabSize",
+		"editor.insertSpaces": false,
+		// Formatting overrides
+		"[yaml]": {
+			"editor.insertSpaces": true
+		},
+		"[shellscript]": {
+			"editor.insertSpaces": true
+		},
+		"eslint.validate": [
+			"javascript",
+			"typescript"
+		],
+		"eslint.workingDirectories": [
+			"./mqtt-to-sqs/app"
+		],
+		"editor.formatOnSave": true,
+		"eslint.useFlatConfig": true,
+		"editor.codeActionsOnSave": {
+			"source.fixAll.eslint": "explicit",
+			"source.fixAll.tslint": "never"
+		},
+		"npm.packageManager": "pnpm",
+		"eslint.format.enable": true,
+		// Code spell checker extension settings
+		"cSpell.enabled": true,
+		// UX
+		"explorer.fileNesting.enabled": true,
+		"search.exclude": {
+			"**/dist": true,
+			// "**/lib": true,
+			"**/.yarn": true
+		},
+		"js/ts.implicitProjectConfig.target": "ESNext",
+		"typescript.tsserver.maxTsServerMemory": 4096,
+		"typescript.preferences.quoteStyle": "double",
+		"prettier.enable": false,
+		"sqltools.connections": [],
+		"[sql]": {
+			"editor.defaultFormatter": "mtxr.sqltools"
+		}
+	}
+}

@@ -2,3 +2,5 @@ passwd
 .env
 node_modules
 build
+configuration*/
+!app/src/**/configuration

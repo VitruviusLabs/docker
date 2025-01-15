@@ -1,0 +1,14 @@
+services:
+  core:
+    image: vitruvius-labs/mqtt-to-sqs
+    container_name: mqtt-to-sqs
+    build:
+      context: ./
+      dockerfile: ./services/core/Dockerfile
+    env_file:
+      - ./services/core/.env
+    volumes:
+      - ../../app:/home/node/app
+    restart: unless-stopped
+    labels:
+      traefik.enable: "false"

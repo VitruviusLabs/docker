@@ -1,0 +1,16 @@
+{
+	"watch": [
+		"src"
+	],
+	"ext": "mts,mjs,js,ts,json",
+	"ignore": [
+		"src/**/*.spec.mts",
+		"src/**/*.test.mts",
+		"**/cache/**",
+		"*.cache.mts",
+		"*.cache.mjs",
+		".git",
+		"node_modules"
+	],
+	"exec": "tsx watch --tsconfig tsconfig.nodemon.json ./src/app.mts"
+}
